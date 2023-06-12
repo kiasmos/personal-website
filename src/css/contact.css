@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header-all {
+  width: 100%;
+  height: calc(100vh - 120px);
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 0 6%;
+}
+
+.contact-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4%;
+}
+
+.contact-h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.contact-head p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}

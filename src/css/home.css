@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+}
+
+.home-all {
+  width: 100%;
+  height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  gap: 44px;
+}
+
+.home-h1 {
+  width: 600px;
+  height: 154px;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Typewriter effect */
+@keyframes typing {
+  0.0000%,
+  27.3488% {
+    content: "";
+  }
+  1.1395%,
+  26.2093% {
+    content: "d";
+  }
+  2.2791%,
+  25.0698% {
+    content: "de";
+  }
+  3.4186%,
+  23.9302% {
+    content: "dev";
+  }
+  4.5581%,
+  22.7907% {
+    content: "deve";
+  }
+  5.6977%,
+  21.6512% {
+    content: "devel";
+  }
+  6.8372%,
+  20.5116% {
+    content: "develo";
+  }
+  7.9767%,
+  19.3721% {
+    content: "develop";
+  }
+  9.1163%,
+  18.2326% {
+    content: "develope";
+  }
+  10.2558%,
+  17.0930% {
+    content: "developer";
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 8.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.7s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+
+  @keyframes sequencePopup {
+    0%,
+    100% {
+      content: "developer";
+    }
+  }
+}
+
+.home-description {
+  width: 580px;
+  height: 60px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.home-btns {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+  border: none;
+}
+
+.home-about-me-btn {
+  background: #fdb827;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.home-portfolios-btn {
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 8px;
+  padding: 15px;
+  color: #ffffff;
+}
+
