@@ -18,28 +18,31 @@ export default function Contact() {
           </p>
           <p>
             Github:
-            <Link className="active" tto="//github.com/kiasmos">
+            <Link className="selectedNav" to="//github.com/kiasmos">
               {" "}
               kiasmos
             </Link>
           </p>
           <p>
             Twitter:
-            <Link className="active" tto="//github.com/kiasmos">
+            <Link className="selectedNav" to="//github.com/kiasmos">
               {" "}
               k1asmos
             </Link>
           </p>
           <p>
             Telegram:
-            <Link className="active" t to="//github.com/kiasmos">
+            <Link className="selectedNav" to="//github.com/kiasmos">
               {" "}
               kiasmoss
             </Link>
           </p>
           <p>
             Email:
-            <Link className="active" to="//github.com/kiasmos">
+            <Link
+              className="selectedNav"
+              to="//mail.google.com/mail/u/1/#inbox"
+            >
               {" "}
               brahim.arzu@gmail.com
             </Link>

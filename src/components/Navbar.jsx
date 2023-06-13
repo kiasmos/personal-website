@@ -7,22 +7,22 @@ export default function Navbar() {
 
   return (
     <nav>
-      <NavLink activeClassName="active" to="/" exact={true}>
+      <NavLink activeClassName="selectedNav" to="/" exact={true}>
         Home
       </NavLink>
-      <NavLink activeClassName="active" to="/about" exact={true}>
+      <NavLink activeClassName="selectedNav" to="/about">
         About
       </NavLink>
-      <NavLink activeClassName="active" to="/contact" exact={true}>
+      <NavLink activeClassName="selectedNav" to="/contact">
         Contact
       </NavLink>
-      <NavLink activeClassName="active" to="/portfolios" exact={true}>
+      <NavLink activeClassName="selectedNav" to="/portfolios">
         Portfolios
       </NavLink>
-      <NavLink activeClassName="active" to="/journey" exact={true}>
+      <NavLink activeClassName="selectedNav" to="/journey">
         Journey
       </NavLink>
-      <NavLink activeClassName="active" to="/blog" exact={true}>
+      <NavLink activeClassName="selectedNav" to="/blog">
         Blog
       </NavLink>
     </nav>
